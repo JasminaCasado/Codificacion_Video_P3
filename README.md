@@ -20,7 +20,7 @@ Aplicamos la compresion
 `ffmpeg -i bbb_1minute_mono.mp4 -map 0:a:0 -b:a 31k lower_bbb.mp3`
 
 Creamos un documento .srt con los subtitulos del primer minuto del video. 
-## 2. MP4 conteiner 
+## 2. MP4 container 
 
 Usamos la siguiente comanda para la ejecucion del container 
 
