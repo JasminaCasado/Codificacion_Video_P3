@@ -17,7 +17,7 @@ Comprobamos que efectivamente nuestro audio esta en mono
 `ffprobe bbb_1minute_mono.mp4`
 
 Aplicamos la compresion 
-`ffmpeg -i bbb_1minute_mono.mp4 -map 0:a:0 -b:a 31k lower_bbb.mp3`
+`ffmpeg -i bbb_1minute_mono.mp4 -map 0:a:0 -b:a 16k lower_bbb.mp3`
 
 Creamos un documento .srt con los subtitulos del primer minuto del video. 
 ## 2. MP4 container 
