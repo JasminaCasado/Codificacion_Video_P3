@@ -1,5 +1,3 @@
-# script per crear containers d'arxius MP4 amb video, audio i subtitols
-
 import os
 
 video = input('Nombre del video')
