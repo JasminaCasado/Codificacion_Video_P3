@@ -21,13 +21,21 @@ Aplicamos la compresion
 
 Creamos un documento .srt con los subtitulos del primer minuto del video. 
 
-## 2. MP4 container 
-
 Usamos la siguiente comanda para la ejecucion del container 
 
 `ffmpeg -i bbb_1minute_onlyVideo.mp4 -i bbb_subtitles.srt -i bbb_1minute_mono.ac3 -i lower_bbb.ac3 -c:v copy -c:a aac -c:s mov_text -map 0:v:0 -map 2:a:0 -map 3:a:0 -map 1:s:0 bbb_container.mp4`
 
 En este container podemos encontrar dos pistas de audio, una con el audio original en mono y otra con este mismo audio con un bitrate inferior. También se puede seleccionar desde VLC la pista de subtitulos. 
+
+## 2. Automatizate Container 
+
+Generamos un script _P3.py_ que por pantalla pide al usuario el nombre de los archivos para poder crear el container. En el ejercicio 5 creamos una función con este código. 
+
+## 3. Container Info 
+
+Creamos un script _P3_ en el que al introducir un container determina si pertenece a un Standard o no. 
+
+Finalmente integramos las dos funciones generadas en una clase en el script _class_Lab3.py_
 
 
 ## Referencias 
